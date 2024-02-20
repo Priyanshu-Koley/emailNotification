@@ -1,0 +1,12 @@
+<form (submit)="register($event)">
+    <div>
+        <label for="name">Name </label>
+        <input type="text" id="name" placeholder="Name...." required (change)="nameChangeHandler($event)">
+    </div>
+    <div>
+        <label for="email">Email </label>
+        <input type="email" id="email" placeholder="Email...." required (change)="emailChangeHandler($event)">
+    </div>
+    <br>
+    <button type="submit">Register</button>
+</form>
